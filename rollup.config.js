@@ -1,5 +1,6 @@
 import resolve from 'rollup-plugin-node-resolve';
 import commonjs from 'rollup-plugin-commonjs';
+import json from '@rollup/plugin-json'
 import pkg from './package.json';
 
 export default [
@@ -12,12 +13,13 @@ export default [
     },
     plugins: [
       resolve(),
-      commonjs()
+      commonjs(),
+      json()
     ]
   },
   {
     input: 'src/main.js',
-    external: [],
+    external: ['mime-types'],
     output: [
       { file: pkg.main, format: 'cjs' },
       { file: pkg.module, format: 'es' }
