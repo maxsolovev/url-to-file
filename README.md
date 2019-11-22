@@ -1,13 +1,13 @@
-##URL to File
+# URL to File
 
-###Install
+### Install
 `yarn add @maxsolovev/url-to-file`
 
 or
 
 `npm i @maxsolovev/url-to-file`
 
-###Usage
+### Usage
 
 ```javascript
 import urlToFile from "@maxsolovev/url-to-file";
