@@ -1,0 +1,29 @@
+{
+  "name": "@maxsolovev/url-to-file",
+  "version": "1.0.1",
+  "description": "Convert URL to File with filename and filetype",
+  "keywords": [
+    "file",
+    "filename",
+    "url",
+    "filetype"
+  ],
+  "author": "Max Solovev <me@maxsolovev.ru>",
+  "license": "ISC",
+  "main": "dist/url-to-file.cjs.js",
+  "module": "dist/url-to-file.esm.js",
+  "browser": "dist/url-to-file.umd.js",
+  "devDependencies": {
+    "rollup": "^1.20.0",
+    "rollup-plugin-commonjs": "^10.0.0",
+    "rollup-plugin-node-resolve": "^5.1.0"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "prepublish": "yarn build"
+  },
+  "files": [
+    "dist"
+  ]
+}
