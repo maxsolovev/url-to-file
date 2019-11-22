@@ -19,7 +19,7 @@ You can provide options
 
 ```javascript
 urlToFile("http://some-url.com/some-image.png", {
-  fileName: "i-prefer-than-name.png",
+  fileName: "i-prefer-that-name.png",
   fileType: "image/png"
 });
 ```
