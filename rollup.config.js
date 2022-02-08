@@ -2,6 +2,7 @@ import resolve from 'rollup-plugin-node-resolve';
 import commonjs from 'rollup-plugin-commonjs';
 import json from '@rollup/plugin-json'
 import pkg from './package.json';
+import { uglify } from "rollup-plugin-uglify";
 
 export default [
   {
@@ -14,7 +15,8 @@ export default [
     plugins: [
       resolve(),
       commonjs(),
-      json()
+      json(),
+      uglify(),
     ]
   },
   {
